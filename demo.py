@@ -70,18 +70,51 @@
 #partition--A value that reads the same backward and forward
 
 #1st method-->slicing 
-word=input("enter a word:")
-if word==word[::-1]:
-    print("palindrome")
-else:
-    print("not palindrome")
-#without slicing
-word=input("enter a word:") #madam
-rev=""
-for ch in word: 
-    rev=ch+rev   
+# word=input("enter a word:")
+# if word==word[::-1]:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+# #without slicing
+# word=input("enter a word:") #madam
+# rev=""
+# for ch in word: 
+#     rev=ch+rev   
 
-if word==rev:
+# if word==rev:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+#without slicing-->only for numbers
+
+num=int(input("enter a number:"))
+original=num
+rev=0
+while num>0:
+    digit=num%10 #1
+    rev=rev*10+digit #1
+    num=num//10      #12
+print(rev)
+if original==rev:
     print("palindrome")
 else:
     print("not palindrome")
+
+digit        rev           num
+                           121    
+1            1             12
+2            12            1
+
+
+def remove_duplicates(sorted_list):
+    if not sorted_list:
+        return []
+
+    # Initialize result with the first element
+    result = [sorted_list[0]]
+
+    # Iterate through the list
+    for i in range(1, len(sort
+
+
